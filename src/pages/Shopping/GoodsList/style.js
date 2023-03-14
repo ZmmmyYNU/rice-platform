@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     ul {
-      height: 47rem;
       li {
         float: left;
         width: 8.5rem;
@@ -18,6 +17,7 @@ export const Wrapper = styled.div`
         border-radius: 0.1rem;
         .img {
           width: 100%;
+          height: 10rem;
           margin-bottom: 0.1rem;
         }
         .idea-body {
@@ -29,23 +29,27 @@ export const Wrapper = styled.div`
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin: 0.7rem 0;
+            margin: 0.7rem 0 0.2rem 0;
             font-size: 0.65rem;
           }
           .ideaitem-footer {
-            font-size: 0.16rem;
-            justify-content: space-between;
-            .user-img {
-              width: 0.8rem;
-              height: 0.8rem;
-              margin-right: 0.3rem;
-              border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .tag {
+              display: inline-block;
+              padding: 0 0.1rem;
+              font-size: 0.4rem;
+              color: rgba(0, 0, 0, 0.3);
+              border: 1px solid rgba(0, 0, 0, 0.3);
             }
-            i {
-              margin-right: 0.05rem;
-            }
-            .guzhangnumber {
-              margin-right: 0.1rem;
+            .price {
+              font-size: 0.8rem;
+              margin: 0.2rem 0;
+              font-weight: 500;
+              .price-icon {
+                font-size: 0.4rem;
+              }
             }
           }
         }

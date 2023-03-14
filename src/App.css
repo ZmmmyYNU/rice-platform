@@ -1,6 +1,9 @@
 .App {
+  height: 100%;
   font-size: 0.7rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .App-logo {
