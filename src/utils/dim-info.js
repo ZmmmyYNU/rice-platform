@@ -1,14 +1,15 @@
 export function dim(type, data) {
   let result = "";
+  const newData = String(data);
   switch (type) {
     case "phone":
-      const front = data.slice(0, 3);
-      const end = data.slice(data.length - 2, data.length);
+      const front = newData.slice(0, 3);
+      const end = newData.slice(newData.length - 2, newData.length);
       result = front + "******" + end;
       break;
     case "name":
-      const start = data[0];
-      const last = data[data.length - 1];
+      const start = newData[0];
+      const last = newData[newData.length - 1];
       result = start + "*" + last;
       break;
     default:

@@ -11,6 +11,9 @@ const Order = lazy(() => import("../pages/Shopping/Order"));
 const Cart = lazy(() => import("../pages/Shopping/Cart"));
 const OrderList = lazy(() => import("../pages/Shopping/OrderList"));
 const Address = lazy(() => import("../pages/Shopping/GoodsDetail/Address"));
+const EditAddress = lazy(() =>
+  import("../pages/Shopping/GoodsDetail/Address/EditAddress")
+);
 const More = lazy(() => import("../components/More"));
 const Search = lazy(() => import("../components/Search"));
 const Camera = lazy(() => import("../pages/Camera"));
@@ -30,6 +33,7 @@ export const RoutesConfig = () => {
       </Route>
       <Route path="/goodsdetail" element={<GoodsDetail />}></Route>
       <Route path="/address" element={<Address />}></Route>
+      <Route path="/editaddress" element={<EditAddress />}></Route>
       <Route path="/submitorder" element={<Order />}></Route>
       <Route path="/cart" element={<Cart />}></Route>
       <Route path="/orderlist" element={<OrderList />}></Route>
