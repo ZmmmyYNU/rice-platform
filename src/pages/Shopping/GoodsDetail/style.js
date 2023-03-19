@@ -1,5 +1,7 @@
 import styled from "styled-components";
 export const IdeaDetailWrapper = styled.div`
+  padding-bottom: 2.5rem;
+
   .idea-detail-header {
     padding-top: 0.1rem;
     display: flex;

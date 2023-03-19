@@ -1,5 +1,6 @@
 import React from "react";
 import { ShopTopWrapper } from "./style";
+import { Link } from "react-router-dom";
 export function ShopHeader() {
   return (
     <ShopTopWrapper>
@@ -14,7 +15,10 @@ export function ShopHeader() {
       </div>
 
       <div className="icon-left iconfont icon-gouwuche"></div>
-      <div className="icon-left iconfont icon-dingdan"></div>
+      <Link to="/orderlist">
+        <div className="icon-left iconfont icon-dingdan"></div>
+      </Link>
+
       <div className="icon-left iconfont icon-gengduo-hengxiang"></div>
     </ShopTopWrapper>
   );

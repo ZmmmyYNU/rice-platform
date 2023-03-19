@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ShopHeader } from "./Header";
 import { GoodsList } from "./GoodsList";
 import { getIdea } from "@/api/request";
-import { CapsuleTabs } from "antd-mobile";
+import { CapsuleTabs, PullToRefresh } from "antd-mobile";
 import styled from "styled-components";
 
 export default function Shopping() {
@@ -10,17 +10,24 @@ export default function Shopping() {
   useEffect(() => {
     (async () => {
       let { data } = await getIdea();
-      console.log(data);
       setGoods(data);
     })();
-    console.log(111111111);
   }, []);
   return (
     <Wrapper>
       <ShopHeader />
       <Content>
         <TabBox />
-        <GoodsList goods={goods} />
+        <PullToRefresh
+          onRefresh={async () => {
+            await new Promise((resolve, reject) => {
+              setTimeout(() => resolve(), 2000);
+            });
+            // setData([...getNextData(), ...data]);
+          }}
+        >
+          <GoodsList goods={goods} />
+        </PullToRefresh>
       </Content>
     </Wrapper>
   );
@@ -39,7 +46,8 @@ const TabBox = () => {
 };
 
 const Wrapper = styled.div`
-  height: 100%;
+  flex: 1;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
 `;

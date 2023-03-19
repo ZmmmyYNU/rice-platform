@@ -24,6 +24,7 @@
     "swiper": "^4.5.1"
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@njleonzhang/postcss-px-to-rem": "^1.0.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",

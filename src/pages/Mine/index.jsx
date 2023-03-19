@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import UserInfo from "./UserInfo";
+import Collect from "./Collect";
 
 export default function Mine() {
   return (
-    <div>Mine</div>
-  )
+    <>
+      <UserInfo />
+      <Collect />
+    </>
+  );
 }

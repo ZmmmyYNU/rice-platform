@@ -111,13 +111,16 @@ export default function IdeaDetail() {
 
       <Wrapper>
         <div className="delivery">
-          <div className="line">
-            送至：
-            <div className="right ">
-              <i className="iconfont icon-dingwei"></i> 云南大学呈贡校区
+          <Link to="/address">
+            <div className="line">
+              送至：
+              <div className="right ">
+                <i className="iconfont icon-dingwei"></i> 云南大学呈贡校区
+              </div>
+              <i className="iconfont icon-xiangyoujiantou"></i>
             </div>
-            <i className="iconfont icon-xiangyoujiantou"></i>
-          </div>
+          </Link>
+
           <div className="line line2">
             运费：
             <div className="right">全场包邮</div>
@@ -175,8 +178,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -184,8 +187,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -193,8 +196,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -202,8 +205,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -211,8 +214,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -266,8 +269,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -275,8 +278,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -284,8 +287,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -293,8 +296,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />
@@ -302,8 +305,8 @@ export default function IdeaDetail() {
                     src={
                       "https://images.unsplash.com/photo-1567945716310-4745a6b7844b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60"
                     }
-                    width={64}
-                    height={64}
+                    width={"3.2rem"}
+                    height={"3.2rem"}
                     fit="cover"
                     style={{ borderRadius: 4 }}
                   />

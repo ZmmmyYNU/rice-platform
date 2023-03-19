@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
         border-radius: 0.1rem;
         .img {
           width: 100%;
+          height: 10rem;
           margin-bottom: 0.1rem;
         }
         .idea-body {

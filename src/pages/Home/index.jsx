@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
-
+import React, { useState, useEffect } from "react";
+import { useNavigate, Outlet, useLocation } from "react-router-dom";
+import { Block } from "./style";
+import Footer from "../../components/Footer";
 export default function Home() {
-    const navigate = useNavigate()
-    useEffect(() => {
-        navigate(`/home/idea`)
-    }, [])
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (pathname === "/home") {
+      navigate(`/home/idea`);
+    }
+  }, []);
 
-    return (
-        <>
-            <Outlet />
-        </>
-    )
+  return (
+    <>
+      <Outlet />
+      <Block />
+      <Footer />
+    </>
+  );
 }

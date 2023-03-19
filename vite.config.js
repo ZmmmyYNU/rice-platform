@@ -1,14 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'./',
+  base: "./",
+  server: {
+    host: "0.0.0.0", // ← 新增内容 ←
+  },
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, 'src')//路径别名
-    }
-  }
-})
+    alias: [
+      {
+        find: "@",
+        replacement: resolve(__dirname, "src"),
+      },
+    ],
+  },
+});
